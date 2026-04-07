@@ -1,0 +1,115 @@
+﻿@model HiTechShop.Models.UserProfileViewModel
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                <div class="card-header bg-primary bg-gradient text-white p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-white text-primary d-flex align-items-center justify-content-center shadow-sm" style="width: 60px; height: 60px;">
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h4 class="mb-0 fw-bold">@Model.NguoiDung.HoTen</h4>
+                            <span class="badge bg-light text-primary mt-1 text-uppercase">@Model.TaiKhoan.VaiTro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body p-4">
+                    <h5 class="text-secondary fw-bold mb-4 border-bottom pb-2">
+                        <i class="fas fa-address-card me-2"></i>Thông tin cá nhân
+                    </h5>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-5 text-muted">Số điện thoại:</div>
+                        <div class="col-sm-7 fw-bold">@Model.NguoiDung.SoDienThoai</div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-5 text-muted">Địa chỉ:</div>
+                        <div class="col-sm-7 fw-bold">@Model.NguoiDung.DiaChi</div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-5 text-muted">Giới tính:</div>
+                        <div class="col-sm-7 fw-bold">@Model.NguoiDung.GioiTinh</div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-sm-5 text-muted">Ngày sinh:</div>
+                        <div class="col-sm-7 fw-bold">
+                            @(Model.NguoiDung.NgaySinh.HasValue ? Model.NguoiDung.NgaySinh.Value.ToString("dd/MM/yyyy") : "Chưa cập nhật")
+                        </div>
+                    </div>
+
+                    <h5 class="text-secondary fw-bold mb-4 border-bottom pb-2">
+                        <i class="fas fa-shield-alt me-2"></i>Bảo mật & Tài khoản
+                    </h5>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-5 text-muted">Tên đăng nhập:</div>
+                        <div class="col-sm-7 fw-bold text-primary">@Model.TaiKhoan.TenDangNhap</div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-sm-5 text-muted">Mật khẩu:</div>
+                        <div class="col-sm-7">
+                            <a href="@Url.Action("ChangePassword", "User")" class="btn btn-sm btn-outline-secondary rounded-pill">
+                                <i class="fas fa-key me-1"></i> Đổi mật khẩu
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center pt-3">
+                        <a href="@Url.Action("DonHang", "User")" class="btn btn-outline-primary rounded-pill px-4 shadow-sm">
+                            <i class="fas fa-shopping-bag me-2"></i>Đơn hàng
+                        </a>
+                        <a href="@Url.Action("Logout", "User")" class="btn btn-danger rounded-pill px-4 shadow-sm">
+                            <i class="fas fa-sign-out-alt me-2"></i>Đăng xuất
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="@Url.Action("EditProfile", "User")" class="text-decoration-none text-muted small mx-2">
+                    <i class="fas fa-user-edit me-1"></i>Chỉnh sửa thông tin
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f0f2f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .bg-primary.bg-gradient {
+        background: linear-gradient(45deg, #0d6efd, #0099ff) !important;
+    }
+
+    .btn {
+        transition: all 0.3s ease;
+    }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+</style>
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle me-2"></i> @TempData["Success"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}

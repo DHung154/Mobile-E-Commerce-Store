@@ -1,0 +1,150 @@
+﻿@model HiTechShop.Models.SanPham
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>✏️ Sửa sản phẩm</h2>
+
+@using (Html.BeginForm("Edit", "SanPham", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.MaSP)
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Tên Sản Phẩm <span class="text-danger">*</span></label>
+            @Html.TextBoxFor(m => m.TenSP, new { @class = "form-control", required = "required" })
+        </div>
+
+        <div class="form-group col-md-3">
+            <label>Giá Bán <span class="text-danger">*</span></label>
+            @Html.TextBoxFor(m => m.GiaBan, new { @class = "form-control", type = "number", required = "required" })
+        </div>
+
+        <div class="form-group col-md-3">
+            <label>Giảm Giá (%)</label>
+            @Html.TextBoxFor(m => m.GiamGia, new { @class = "form-control", type = "number", placeholder = "0" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Mô Tả</label>
+        @Html.TextAreaFor(m => m.MoTa, new { @class = "form-control", rows = 3 })
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Hình Ảnh</label>
+            @if (!string.IsNullOrEmpty(Model.HinhAnh))
+            {
+                <div class="mb-2">
+                    <img src="~/Content/images/@Model.HinhAnh" alt="@Model.TenSP" style="max-width: 200px; border: 1px solid #ccc; border-radius: 4px;" />
+                    <p class="text-muted small">Hình ảnh hiện tại</p>
+                </div>
+            }
+            <input type="file" name="imageFile" id="imageFile" class="form-control" accept="image/*" />
+            <small class="form-text text-muted">Để trống nếu không muốn thay đổi. Chọn JPG, PNG, GIF hoặc WebP</small>
+            <div id="imagePreview" style="margin-top: 10px;"></div>
+        </div>
+
+        <div class="form-group col-md-3">
+            <label>Số Lượng Tồn</label>
+            @Html.TextBoxFor(m => m.SoLuongTon, new { @class = "form-control", type = "number" })
+        </div>
+
+        <div class="form-group col-md-3">
+            <label>Màu Sắc</label>
+            @Html.TextBoxFor(m => m.MauSac, new { @class = "form-control", placeholder = "Đen, Bạc, Xanh..." })
+        </div>
+    </div>
+
+    <div class="card mt-3 mb-3">
+        <div class="card-header bg-info text-white">
+            <strong>💻 Thông Số Kỹ Thuật</strong>
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>CPU</label>
+                    @Html.TextBoxFor(m => m.CPU, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>RAM</label>
+                    @Html.TextBoxFor(m => m.RAM, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Pin</label>
+                    @Html.TextBoxFor(m => m.Pin, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label>Thông Số Khác</label>
+                    @Html.TextBoxFor(m => m.ThongSoKhac, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Trạng Thái Sản Phẩm</label>
+                    @Html.DropDownListFor(m => m.TrangThaiSanPham,
+                        new List<SelectListItem> {
+                            new SelectListItem { Text = "Kinh doanh", Value = "Kinh doanh" },
+                            new SelectListItem { Text = "Ngừng bán", Value = "Ngừng bán" },
+                            new SelectListItem { Text = "Hết hàng", Value = "Hết hàng" }
+                        }, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-3 mb-3">
+        <div class="card-header bg-warning text-dark">
+            <strong>📅 Ngày Sản Xuất & Hạn Bảo Hành</strong>
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Ngày Nhập Kho</label>
+                    @Html.TextBoxFor(m => m.NgayNhapKho, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Ngày Sản Xuất</label>
+                    @Html.TextBoxFor(m => m.NgaySanXuat, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label>Hạn Sử Dụng (Bảo hành)</label>
+                    @Html.TextBoxFor(m => m.HanSuDung, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-3 mb-3">
+        <div class="card-header bg-secondary text-white">
+            <strong>🏷️ Phân Loại</strong>
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Danh Mục</label>
+                    @Html.DropDownListFor(m => m.MaLoai, (SelectList)ViewBag.MaLoai, "-- Chọn Loại --", new { @class = "form-control" })
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Thương Hiệu</label>
+                    @Html.DropDownListFor(m => m.MaTH, (SelectList)ViewBag.MaTH, "-- Chọn Thương Hiệu --", new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg">💾 Cập nhật</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary btn-lg">❌ Hủy</a>
+    </div>
+}

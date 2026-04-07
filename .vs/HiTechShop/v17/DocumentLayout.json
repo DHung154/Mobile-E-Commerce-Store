@@ -1,0 +1,1027 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|d:\\doan\\lt_web-main\\lt_web-main\\hitechshop\\hitechshop\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\chat\\chatai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\chat\\chatai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\chatbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\chatbox.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\_danhsachdanhgia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\_danhsachdanhgia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\_menuchinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\_menuchinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\_menudanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\_menudanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\_menuloai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\_menuloai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\chitietsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\chitietsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\stylesheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\stylesheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\hitech.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\hitech.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\shared\\_chatbox.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\shared\\_chatbox.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\user\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\user\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\changepasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\userprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\userordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\userordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\content\\mycustomlayout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\content\\mycustomlayout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\lienhe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\lienhe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\lienhe\\huongdanmuahang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\lienhe\\huongdanmuahang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\lienhe\\chinhsachdoitra.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\lienhe\\chinhsachdoitra.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\lienhe\\chinhsachbaomat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\lienhe\\chinhsachbaomat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\lienhe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\lienhe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\controllers\\taikhoancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\taikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\taikhoan\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\taikhoan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\taikhoan\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\data\\taikhoancreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\data\\taikhoancreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\taikhoan\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\thuonghieu\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\thuonghieu\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\giohang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\thuonghieu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\thuonghieu\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\sanpham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\sanpham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\thuonghieu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\thuonghieu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\loaisp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\loaisp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\views\\sanpham\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\views\\sanpham\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\controllers\\thuonghieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\controllers\\thuonghieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\danhmucsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\danhmucsp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\sanphamtheoloai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\sanphamtheoloai.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\views\\home\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\views\\home\\timkiem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\areas\\admin\\data\\authorizeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\areas\\admin\\data\\authorizeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\hitechshop\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DC9CCAE-E0DC-4D49-9E07-FD88A72E625C}|HiTechShop\\HiTechShop.csproj|solutionrelative:hitechshop\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "chatbox.js",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\chatbox.js",
+              "RelativeDocumentMoniker": "HiTechShop\\chatbox.js",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\chatbox.js",
+              "RelativeToolTip": "HiTechShop\\chatbox.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-07T18:12:40.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_MenuDanhMuc.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_MenuDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\_MenuDanhMuc.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_MenuDanhMuc.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\_MenuDanhMuc.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:42:59.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\controllers\\HomeController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\controllers\\HomeController.cs",
+              "RelativeToolTip": "HiTechShop\\controllers\\HomeController.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAAAO0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:34:31.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T16:32:43.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Web.config",
+              "RelativeDocumentMoniker": "HiTechShop\\Web.config",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Web.config",
+              "RelativeToolTip": "HiTechShop\\Web.config",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-28T07:58:20.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_DanhSachDanhGia.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_DanhSachDanhGia.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\_DanhSachDanhGia.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_DanhSachDanhGia.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\_DanhSachDanhGia.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-23T05:38:37.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\User\\Login.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\User\\Login.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\User\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T01:07:21.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserProfileViewModel.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\UserProfileViewModel.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\UserProfileViewModel.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\UserProfileViewModel.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\UserProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:37:06.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatAI.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Chat\\ChatAI.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Chat\\ChatAI.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Chat\\ChatAI.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Chat\\ChatAI.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T07:27:58.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\controllers\\ChatController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\controllers\\ChatController.cs",
+              "RelativeToolTip": "HiTechShop\\controllers\\ChatController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswGAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:23:46.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_MenuLoai.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_MenuLoai.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\_MenuLoai.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_MenuLoai.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\_MenuLoai.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:43:08.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\User\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\User\\ChangePassword.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\User\\ChangePassword.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\User\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T07:19:31.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAKMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T04:32:37.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_MenuChinh.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_MenuChinh.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\_MenuChinh.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\_MenuChinh.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\_MenuChinh.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:42:52.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChiTietSP.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\ChiTietSP.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\ChiTietSP.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\ChiTietSP.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\ChiTietSP.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:43:17.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAD0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T03:21:37.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StyleSheet1.css",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\StyleSheet1.css",
+              "RelativeDocumentMoniker": "HiTechShop\\StyleSheet1.css",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\StyleSheet1.css",
+              "RelativeToolTip": "HiTechShop\\StyleSheet1.css",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-22T04:06:31.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HiTech.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\HiTech.edmx",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\HiTech.edmx",
+              "ToolTip": "D:\\M\u00F4n H\u1ECDc\\LTWeb\\HiTechShop\\HiTechShop\\Models\\HiTech.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\..\\M\u00F4n H\u1ECDc\\LTWeb\\HiTechShop\\HiTechShop\\Models\\HiTech.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-12-20T09:49:37.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ChatBox.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Shared\\_ChatBox.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Shared\\_ChatBox.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Shared\\_ChatBox.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Shared\\_ChatBox.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T07:39:03.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChangePasswordViewModel.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\ChangePasswordViewModel.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\ChangePasswordViewModel.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\ChangePasswordViewModel.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\ChangePasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T07:10:15.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\User\\Profile.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\User\\Profile.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T10:11:36.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\LienHe\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\LienHe\\Index.cshtml",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAqwKUAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T01:47:40.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Controllers\\SanPhamController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Controllers\\SanPhamController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwKgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:39:33.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserOrdersViewModel.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\UserOrdersViewModel.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\UserOrdersViewModel.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\UserOrdersViewModel.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\UserOrdersViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T06:47:16.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ChinhSachDoiTra.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\ChinhSachDoiTra.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\LienHe\\ChinhSachDoiTra.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\ChinhSachDoiTra.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\LienHe\\ChinhSachDoiTra.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAJIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T01:45:28.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ChinhSachBaoMat.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\ChinhSachBaoMat.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\LienHe\\ChinhSachBaoMat.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\ChinhSachBaoMat.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\LienHe\\ChinhSachBaoMat.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T01:12:40.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GioHangController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\controllers\\GioHangController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\controllers\\GioHangController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\controllers\\GioHangController.cs",
+              "RelativeToolTip": "HiTechShop\\controllers\\GioHangController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:33:24.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T09:38:00.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MyCusTomLayOut.css",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Content\\MyCusTomLayOut.css",
+              "RelativeDocumentMoniker": "HiTechShop\\Content\\MyCusTomLayOut.css",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Content\\MyCusTomLayOut.css",
+              "RelativeToolTip": "HiTechShop\\Content\\MyCusTomLayOut.css",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAANsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-21T03:41:37.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HuongDanMuaHang.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\HuongDanMuaHang.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\LienHe\\HuongDanMuaHang.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\LienHe\\HuongDanMuaHang.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\LienHe\\HuongDanMuaHang.cshtml",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAswKMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T01:46:49.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Create.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Create.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Create.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T09:38:55.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LienHe.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\LienHe.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\LienHe.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\LienHe.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\LienHe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T02:42:32.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Edit.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Edit.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Edit.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\TaiKhoan\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T09:37:53.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Edit.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Edit.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Edit.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T05:44:42.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TaiKhoanController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\TaiKhoanController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Controllers\\TaiKhoanController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\TaiKhoanController.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Controllers\\TaiKhoanController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:39:38.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TaiKhoanCreateVM.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Data\\TaiKhoanCreateVM.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Data\\TaiKhoanCreateVM.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Data\\TaiKhoanCreateVM.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Data\\TaiKhoanCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T15:14:39.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T10:01:22.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Create.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Create.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Create.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T04:36:31.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\GioHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\GioHang\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\GioHang\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\GioHang\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:38:56.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T03:31:30.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAJUAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T16:32:35.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\ThuongHieu\\Index.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T04:34:16.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\LoaiSP\\Index.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\LoaiSP\\Index.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\LoaiSP\\Index.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\LoaiSP\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T03:53:44.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\SanPham\\Edit.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Views\\SanPham\\Edit.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Views\\SanPham\\Edit.cshtml",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Views\\SanPham\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T03:44:49.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T08:22:15.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\_ViewStart.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T08:22:12.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DanhMucSP.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\DanhMucSP.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\DanhMucSP.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\DanhMucSP.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\DanhMucSP.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:43:27.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\About.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\About.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T09:20:01.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "SanPhamTheoLoai.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\SanPhamTheoLoai.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\SanPhamTheoLoai.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\SanPhamTheoLoai.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\SanPhamTheoLoai.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:44:10.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "TimKiem.cshtml",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\TimKiem.cshtml",
+              "RelativeDocumentMoniker": "HiTechShop\\views\\Home\\TimKiem.cshtml",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\views\\Home\\TimKiem.cshtml",
+              "RelativeToolTip": "HiTechShop\\views\\Home\\TimKiem.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-28T07:44:24.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:53:37.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ThuongHieuController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\ThuongHieuController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Controllers\\ThuongHieuController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\ThuongHieuController.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Controllers\\ThuongHieuController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:39:43.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\GioHang.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\GioHang.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\GioHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:36:41.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\Cart.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\Cart.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:36:28.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "HiTechShop\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:25:31.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DonHangController.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\DonHangController.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Controllers\\DonHangController.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Controllers\\DonHangController.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Controllers\\DonHangController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:39:22.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\App_Start\\FilterConfig.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "HiTechShop\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:25:50.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "HiTechShop\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:26:01.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "AuthorizeAdmin.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Data\\AuthorizeAdmin.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\areas\\Admin\\Data\\AuthorizeAdmin.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\areas\\Admin\\Data\\AuthorizeAdmin.cs",
+              "RelativeToolTip": "HiTechShop\\areas\\Admin\\Data\\AuthorizeAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:39:50.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\HomeViewModel.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\HomeViewModel.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T07:36:52.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Models\\AccountViewModels.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Models\\AccountViewModels.cs",
+              "RelativeToolTip": "HiTechShop\\Models\\AccountViewModels.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:22:19.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\favicon.ico",
+              "RelativeDocumentMoniker": "HiTechShop\\favicon.ico",
+              "ToolTip": "D:\\M\u00F4n H\u1ECDc\\LTWeb\\HiTechShop\\HiTechShop\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "RelativeToolTip": "..\\..\\..\\..\\M\u00F4n H\u1ECDc\\LTWeb\\HiTechShop\\HiTechShop\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-11-28T08:22:05.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Global.asax.cs",
+              "RelativeDocumentMoniker": "HiTechShop\\Global.asax.cs",
+              "ToolTip": "D:\\DoAn\\LT_Web-main\\LT_Web-main\\HiTechShop\\HiTechShop\\Global.asax.cs",
+              "RelativeToolTip": "HiTechShop\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T08:21:35.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

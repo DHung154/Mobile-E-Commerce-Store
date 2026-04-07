@@ -1,0 +1,28 @@
+﻿@model HiTechShop.Models.ThuongHieu
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sửa Thương Hiệu </h2>
+
+@using (Html.BeginForm("Edit", "ThuongHieu", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.MaTH)
+
+    <div class="form-group">
+        <label>Tên THương Hiệu</label>
+        @Html.TextBoxFor(m => m.TenTH, new { @class = "form-control", required = "required" })
+    </div>
+
+    <div class="form-group">
+        <label>Quốc Gia</label>
+        @Html.TextBoxFor(m => m.QuocGia, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Cập Nhật</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary"> Hủy</a>
+    </div>
+}

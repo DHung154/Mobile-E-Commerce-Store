@@ -1,0 +1,23 @@
+﻿@model HiTechShop.Models.DonHang
+
+<h2 class="text-center mb-4">Chọn phương thức thanh toán</h2>
+
+<div class="list-group shadow">
+    <a href="@Url.Action("ThanhToanCOD", new { maDH = Model.MaDH })" class="list-group-item list-group-item-action">
+        💳 Thanh toán khi nhận hàng (COD)
+    </a>
+
+    <a href="@Url.Action("ThanhToanChuyenKhoan", new { maDH = Model.MaDH })" class="list-group-item list-group-item-action">
+        🏦 Chuyển khoản ngân hàng
+    </a>
+
+    <a href="@Url.Action("ThanhToanQR", new { maDH = Model.MaDH })" class="list-group-item list-group-item-action">
+        📱 Thanh toán bằng QR
+    </a>
+</div>
+
+
+
+
+
+

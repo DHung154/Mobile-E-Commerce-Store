@@ -1,0 +1,164 @@
+﻿@{
+    ViewBag.Title = "Hướng dẫn mua hàng - HiTech Shop";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase text-danger">
+            <i class="bi bi-cart-check-fill me-2"></i>Hướng Dẫn Mua Hàng Online
+        </h2>
+        <div class="mx-auto" style="height: 3px; width: 60px; background-color: #d70018;"></div>
+        <p class="text-muted mt-3">
+            Sở hữu siêu phẩm công nghệ chỉ với vài bước đơn giản tại HiTech Shop.
+        </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 step-card">
+                <div class="card-body text-center">
+                    <div class="step-icon bg-light-primary text-primary mb-3">
+                        <i class="bi bi-search fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold"><span class="text-danger me-1">01.</span> Tìm kiếm</h5>
+                    <p class="small text-muted">Sử dụng thanh tìm kiếm hoặc danh mục để chọn sản phẩm ưng ý nhất (iPhone, Samsung, Laptop...).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 step-card">
+                <div class="card-body text-center">
+                    <div class="step-icon bg-light-success text-success mb-3">
+                        <i class="bi bi-cart-plus fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold"><span class="text-danger me-1">02.</span> Thêm giỏ hàng</h5>
+                    <p class="small text-muted">Chọn cấu hình (Ram/SSD) và màu sắc, sau đó nhấn <strong>"Thêm vào giỏ hàng"</strong>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 step-card">
+                <div class="card-body text-center">
+                    <div class="step-icon bg-light-warning text-warning mb-3">
+                        <i class="bi bi-bag-check fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold"><span class="text-danger me-1">03.</span> Kiểm tra</h5>
+                    <p class="small text-muted">Xem lại giỏ hàng để đảm bảo số lượng, mã giảm giá và tổng tiền chính xác.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 step-card">
+                <div class="card-body text-center">
+                    <div class="step-icon bg-light-danger text-danger mb-3">
+                        <i class="bi bi-geo-alt fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold"><span class="text-danger me-1">04.</span> Thông tin giao hàng</h5>
+                    <p class="small text-muted">Nhập chính xác <strong>Số điện thoại</strong> và <strong>Địa chỉ</strong> để HiTech giao máy nhanh nhất.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 step-card">
+                <div class="card-body text-center">
+                    <div class="step-icon bg-light-info text-info mb-3">
+                        <i class="bi bi-credit-card fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold"><span class="text-danger me-1">05.</span> Thanh toán</h5>
+                    <p class="small text-muted">Chọn <strong>COD</strong> (nhận hàng trả tiền) hoặc <strong>Chuyển khoản</strong> qua ngân hàng/Momo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0 step-card">
+                <div class="card-body text-center">
+                    <div class="step-icon bg-light-dark text-dark mb-3">
+                        <i class="bi bi-truck fs-2"></i>
+                    </div>
+                    <h5 class="fw-bold"><span class="text-danger me-1">06.</span> Nhận hàng</h5>
+                    <p class="small text-muted">HiTech Shop sẽ gọi xác nhận đơn hàng và giao đến tận tay bạn từ 1-3 ngày làm việc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="@Url.Action("CheckLogin", "LienHe")" class="btn btn-danger btn-lg px-5 py-3 rounded-pill shadow fw-bold transition-all">
+            BẮT ĐẦU TRẢI NGHIỆM NGAY <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+    :root {
+        --hitech-red: #d70018;
+    }
+
+    .bg-light-primary {
+        background-color: #e7f1ff;
+    }
+
+    .bg-light-success {
+        background-color: #e9f7ef;
+    }
+
+    .bg-light-warning {
+        background-color: #fff9e6;
+    }
+
+    .bg-light-danger {
+        background-color: #fdeaea;
+    }
+
+    .bg-light-info {
+        background-color: #e1f5fe;
+    }
+
+    .bg-light-dark {
+        background-color: #f1f1f1;
+    }
+
+    .step-icon {
+        width: 70px;
+        height: 70px;
+        line-height: 75px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .step-card {
+        transition: all 0.3s ease;
+        border-radius: 16px !important;
+    }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+        }
+
+            .step-card:hover .step-icon {
+                transform: scale(1.1);
+            }
+
+    .btn-danger {
+        background-color: var(--hitech-red);
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #b50014;
+            transform: scale(1.05);
+        }
+
+    .transition-all {
+        transition: all 0.2s ease;
+    }
+</style>

@@ -1,0 +1,17 @@
+﻿<link href="~/CSS/chatbox.css" rel="stylesheet" />
+
+<div id="chatToggle" class="chat-toggle">💬</div>
+
+<div id="chatbox" class="chatbox hidden">
+    <div class="chat-header">
+        <span>Hỗ trợ AI</span>
+        <button class="close-btn" onclick="toggleChat()">×</button>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-input">
+        <input type="text" id="userMessage" placeholder="Nhập tin nhắn...">
+        <button onclick="sendMessage()">Gửi</button>
+    </div>
+</div>

@@ -1,0 +1,198 @@
+﻿@model List<HiTechShop.Models.SanPham>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>📦 Quản lý sản phẩm</h2>
+
+<a href="@Url.Action("Create")" class="btn btn-success mb-3">+ Thêm sản phẩm</a>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>⚠️ Lỗi!</strong> @TempData["ErrorMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>✅ Thành công!</strong> @TempData["SuccessMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+<!-- Thống Kê Tồn Kho -->
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <strong>📊 Thống Kê Tồn Kho</strong>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Tổng Số Lượng</h5>
+                        <h3 class="text-primary">@Model.Sum(s => s.SoLuongTon ?? 0)</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Sản Phẩm Hết Hàng</h5>
+                        <h3 class="text-danger">@Model.Count(s => (s.SoLuongTon ?? 0) <= 0)</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Sắp Hết Hàng (< 10)</h5>
+                        <h3 class="text-warning">@Model.Count(s => (s.SoLuongTon ?? 0) > 0 && (s.SoLuongTon ?? 0) < 10)</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Sắp Hết Hạn (< 3 tháng)</h5>
+                        <h3 class="text-danger">@Model.Count(s => s.HanSuDung.HasValue && s.HanSuDung <= DateTime.Now.AddMonths(3) && s.HanSuDung > DateTime.Now)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-hover table-datatable">
+    <thead class="table-secondary">
+        <tr>
+            <th>Mã SP</th>
+            <th>Tên Sản Phẩm</th>
+            <th>Giá Bán</th>
+            <th>Giảm Giá (%)</th>
+            <th>Cấu hình (RAM/CPU)</th>
+            <th>Màu Sắc</th>
+            <th>Tồn Kho</th>
+            <th>Hạn Sử Dụng</th>
+            <th>Ngày Sản Xuất</th> 
+            <th>Trạng Thái</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sp in Model)
+        {
+            var ngayHienTai = DateTime.Now;
+            var tonKhoClass = "badge-success";
+            var tonKhoText = sp.SoLuongTon ?? 0;
+            
+            // Color coding cho tồn kho
+            if (tonKhoText == 0)
+            {
+                tonKhoClass = "badge-danger";
+            }
+            else if (tonKhoText < 10)
+            {
+                tonKhoClass = "badge-warning";
+            }
+
+            var hanSuDungText = sp.HanSuDung.HasValue ? sp.HanSuDung.Value.ToString("dd/MM/yyyy") : "N/A";
+            var hanSuDungClass = "badge-secondary";
+            var hanSuDungIcon = "✅";
+            
+            // Color coding cho hạn sử dụng
+            if (sp.HanSuDung.HasValue)
+            {
+                if (sp.HanSuDung <= ngayHienTai)
+                {
+                    hanSuDungClass = "badge-danger";
+                    hanSuDungIcon = "❌";
+                }
+                else if (sp.HanSuDung <= ngayHienTai.AddMonths(3))
+                {
+                    hanSuDungClass = "badge-warning";
+                    hanSuDungIcon = "⚠️";
+                }
+            }
+
+            <tr>
+                <td><strong>@sp.MaSP</strong></td>
+                <td>@sp.TenSP</td>
+                <td>@String.Format(System.Globalization.CultureInfo.GetCultureInfo("vi-VN"), "{0:c}", sp.GiaBan)</td>
+                <td>
+                    @(sp.GiamGia.HasValue && sp.GiamGia > 0
+                        ? @String.Format("{0:F1}%", sp.GiamGia)
+                        : "0%")
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(sp.CPU))
+                    {
+                        <span class="badge badge-info">@sp.CPU</span>
+                    }
+                    @if (!string.IsNullOrEmpty(sp.RAM))
+                    {
+                        <span class="badge badge-dark">@sp.RAM</span>
+                    }
+                </td>
+
+                <td>
+                    @if (!string.IsNullOrEmpty(sp.MauSac))
+                    {
+                        <span class="badge badge-pill badge-primary">@sp.MauSac</span>
+                    }
+                    else
+                    {
+                        <span class="text-muted">-</span>
+                    }
+                </td>
+                <td>
+                    <span class="badge @tonKhoClass" style="font-size: 14px; padding: 8px 12px;">
+                        @tonKhoText
+                    </span>
+                </td>
+                <td>
+                    <span class="badge @hanSuDungClass" style="font-size: 12px; padding: 6px 10px;">
+                        @hanSuDungIcon @hanSuDungText
+                    </span>
+                </td>
+                <td>
+                    @if (sp.NgaySanXuat.HasValue)
+                    {
+                        <small>@sp.NgaySanXuat.Value.ToString("dd/MM/yyyy")</small>
+                    }
+                    else
+                    {
+                        <small class="text-muted">-</small>
+                    }
+                </td>
+                <td>
+                    @if (!string.IsNullOrEmpty(sp.TrangThaiSanPham))
+                    {
+                        <span class="badge @(sp.TrangThaiSanPham == "Kinh doanh" ? "badge-success"
+                                            : sp.TrangThaiSanPham == "Ngừng bán" ? "badge-secondary"
+                                            : "badge-danger")">
+                            @sp.TrangThaiSanPham
+                        </span>
+                    }
+                    else
+                    {
+                        <span class="badge badge-success">Kinh doanh</span>
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-sm btn-primary" href="@Url.Action("Edit", new { id = sp.MaSP })" title="Sửa">✏️</a>
+                    <a class="btn btn-sm btn-danger" href="@Url.Action("Delete", new { id = sp.MaSP })"
+                       onclick="return confirm('Bạn chắc chắn muốn xóa sản phẩm này?')" title="Xóa">🗑️</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .table-datatable {
+        font-size: 13px;
+    }
+    
+    .badge-success { background-color: #28a745; }
+    .badge-warning { background-color: #ffc107; color: #000; }
+    .badge-danger { background-color: #dc3545; }
+    .badge-info { background-color: #17a2b8; }
+    .badge-secondary { background-color: #6c757d; }
+    .badge-primary { background-color: #007bff; }
+</style>

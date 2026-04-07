@@ -1,0 +1,332 @@
+﻿@model HiTechShop.Models.HomeViewModel
+
+@{
+    ViewBag.Title = "Danh sách Sản Phẩm";
+}
+<style>
+    .product-card {
+        width: 260px;
+        margin-right: 15px;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform .2s;
+    }
+
+        .product-card:hover {
+            transform: scale(1.04);
+        }
+
+    .product-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    .badge-sale {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #e63946;
+        padding: 4px 10px;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .badge-hot {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ff9800;
+        padding: 4px 10px;
+        color: #fff;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .slider-container {
+        white-space: nowrap;
+        width: 100%;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-bottom: 10px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background: #ddd;
+        font-size: 20px;
+        font-weight: bold;
+        transition: .2s;
+    }
+
+        .slider-btn:hover {
+            background: #bbb;
+        }
+
+    .section-title {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin: 20px 0 10px 0;
+    }
+    .brand-item {
+        padding: 8px 16px;
+        border-radius: 20px;
+        background: #f7f7f7;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        text-decoration: none;
+        transition: .2s;
+    }
+
+        .brand-item:hover {
+            background: #ffeaea;
+            border-color: #ff4d4d;
+            color: #ff1a1a;
+        }
+
+    .brand-active {
+        background: #ff3b3b !important;
+        color: white !important;
+        border-color: #ff1a1a !important;
+    }
+    #bannerCarousel .carousel-item img {
+        height: 400px; /* Chiều cao cố định */
+        object-fit: cover; /* Ảnh vừa khung, không bị méo */
+        width: 100%;
+    }
+
+</style>
+
+<div class="container my-4">
+
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="/Content/images/banner1.jpg" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Content/images/banner2.jpg" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="/Content/images/banner3.jpg" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Thương hiệu nổi bật -->
+    <div class="col-md-8">
+        <h4 class="fw-bold mb-3">THƯƠNG HIỆU NỔI BẬT</h4>
+
+        <div class="brand-box mb-3" style="display:flex; flex-wrap:wrap; gap:10px;">
+            @foreach (var th in Model.ThuongHieuList)
+            {
+                <a href="@Url.Action("Index", "Home", new { maTH = th.MaTH })"
+                   class="brand-item @(Model.ThuongHieuDangChon?.MaTH == th.MaTH ? "brand-active" : "")">
+                    @th.TenTH
+                </a>
+            }
+        </div>
+
+
+        @if (Model.SanPhamTheoTH.Any())
+        {
+            <h5 class="fw-bold">Sản phẩm thuộc thương hiệu: @Model.ThuongHieuDangChon.TenTH</h5>
+            <div class="row">
+                @foreach (var sp in Model.SanPhamTheoTH)
+                {
+                    <div class="col-6 col-md-4 col-lg-3 mb-3">
+                        <a href="@Url.Action("ChiTietSP", "Home", new { maSP = sp.MaSP })"
+                           class="text-decoration-none text-dark">
+
+                            <div class="product-card2">
+                                <img src="~/Content/images/@sp.HinhAnh"
+                                     style="width:100%; height:180px; object-fit:cover;" />
+                                <div class="p-2">
+                                    <h6 class="fw-bold">@sp.TenSP</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h4 class="section-title">🔥 Sản phẩm HOT</h4>
+
+        <a href="@Url.Action("SanPhamHot", "Home")"
+           class="text-decoration-none fw-bold text-primary">
+            Xem tất cả →
+        </a>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <button class="slider-btn me-3" onclick="slide('slider2', -270)">&lt;</button>
+
+        <div id="slider2" class="slider-container">
+            @foreach (var sp in Model.HotProducts)
+            {
+                <a href="@Url.Action("ChiTietSP", "Home", new { maSP = sp.MaSP })"
+                   class="product-card d-inline-block text-decoration-none text-dark">
+
+                    <div class="position-relative">
+                        <span class="badge-hot">HOT</span>
+                        <img src="~/Content/images/@sp.HinhAnh" class="product-img" />
+                    </div>
+
+                    <div class="p-2">
+                        <h6 class="fw-bold">@sp.TenSP</h6>
+                        <span class="fw-bold text-danger">@sp.GiaBan.Value.ToString("N0") đ</span>
+                    </div>
+                </a>
+            }
+        </div>
+
+        <button class="slider-btn ms-3" onclick="slide('slider2', 270)">&gt;</button>
+    </div>
+
+
+
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h4 class="section-title">⚡ Sản phẩm SALE</h4>
+
+        <a href="@Url.Action("SanPhamSale", "Home")"
+           class="text-decoration-none fw-bold text-primary">
+            Xem tất cả →
+        </a>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <button class="slider-btn me-3" onclick="slide('slider3', -270)">&lt;</button>
+
+        <div id="slider3" class="slider-container">
+            @foreach (var sp in Model.SaleProducts)
+            {
+                <a href="@Url.Action("ChiTietSP", "Home", new { maSP = sp.MaSP })"
+                   class="product-card d-inline-block text-decoration-none text-dark">
+
+                    <div class="position-relative">
+                        <span class="badge-sale">-@sp.GiamGia%</span>
+                        <img src="~/Content/images/@sp.HinhAnh" class="product-img" />
+                    </div>
+
+                    <div class="p-2">
+                        <h6 class="fw-bold">@sp.TenSP</h6>
+                        <p>
+                            <span class="text-muted text-decoration-line-through">@sp.GiaBan.Value.ToString("N0")</span><br />
+                            <span class="text-danger fw-bold">
+                                @((sp.GiaBan.Value * (1 - (sp.GiamGia/100)))?.ToString("N0")) đ
+                            </span>
+                        </p>
+                    </div>
+                </a>
+            }
+        </div>
+
+        <button class="slider-btn ms-3" onclick="slide('slider3', 270)">&gt;</button>
+    </div>
+
+
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h4 class="section-title">⭐ Tất cả sản phẩm</h4>
+
+        <a href="@Url.Action("TatCaSanPham", "Home")"
+           class="text-decoration-none fw-bold text-primary">
+            Xem tất cả →
+        </a>
+    </div>
+    <div class="d-flex align-items-center">
+        <button class="slider-btn me-3" onclick="slide('slider1', -270)">&lt;</button>
+
+        <div id="slider1" class="slider-container">
+            @foreach (var sp in Model.DsSanPham)
+            {
+                <a href="@Url.Action("ChiTietSP", "Home", new { maSP = sp.MaSP })"
+                   class="product-card d-inline-block text-decoration-none text-dark">
+
+                    <div class="position-relative">
+                        @if (sp.GiamGia > 0)
+                        {
+                            <span class="badge-sale">-@sp.GiamGia%</span>
+                        }
+                        <img src="~/Content/images/@sp.HinhAnh" class="product-img" />
+                    </div>
+
+                    <div class="p-2">
+                        <h6 class="fw-bold">@sp.TenSP</h6>
+                        <p>
+                            <span class="text-muted text-decoration-line-through">
+                                @sp.GiaBan.Value.ToString("N0")
+                            </span><br />
+
+                            <span class="text-danger fw-bold">
+                                @((sp.GiaBan.Value * (1 - (sp.GiamGia/100)))?.ToString("N0")) đ
+                            </span>
+                        </p>
+                    </div>
+                </a>
+            }
+        </div>
+
+        <button class="slider-btn ms-3" onclick="slide('slider1', 270)">&gt;</button>
+    </div>
+
+
+
+    <script>
+        function slide(id, offset) {
+            document.getElementById(id).scrollBy({
+                left: offset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <script>
+        // Khi người dùng chọn thương hiệu → lưu vị trí cuộn
+        document.querySelectorAll('.brand-item').forEach(item => {
+            item.addEventListener('click', () => {
+                sessionStorage.setItem("scrollPos", window.scrollY);
+            });
+        });
+
+        // Khi load lại trang → cuộn xuống vị trí cũ
+        window.addEventListener("load", () => {
+            let pos = sessionStorage.getItem("scrollPos");
+            if (pos) {
+                window.scrollTo(0, pos);
+            }
+        });
+    </script>

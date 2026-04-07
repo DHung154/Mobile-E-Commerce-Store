@@ -1,0 +1,302 @@
+﻿@model HiTechShop.Models.DonHang
+@{
+    ViewBag.Title = "Chi tiết đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>📄 Chi tiết đơn hàng #@(Model?.MaDH ?? 0)</h2>
+
+@if (Model == null)
+{
+    <div class="alert alert-warning">Đơn hàng không tồn tại.</div>
+}
+else
+{
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <strong>📋 Thông tin đơn hàng</strong>
+                </div>
+                <div class="card-body">
+                    <p><strong>Mã đơn hàng:</strong> #@Model.MaDH</p>
+                    <p><strong>Ngày đặt:</strong> 
+                        @if (Model.NgayDat.HasValue)
+                        {
+                            <span>@Model.NgayDat.Value.ToString("dd/MM/yyyy HH:mm:ss")</span>
+                        }
+                        else
+                        {
+                            <span class="text-muted">-</span>
+                        }
+                    </p>
+                    <p><strong>Tổng tiền:</strong> 
+                        @if (Model.TongTien.HasValue)
+                        {
+                            <span class="text-danger fs-5">@Model.TongTien.Value.ToString("N0") đ</span>
+                        }
+                        else
+                        {
+                            <span class="text-muted">0 đ</span>
+                        }
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <strong>👤 Thông tin khách hàng</strong>
+                </div>
+                <div class="card-body">
+                    @if (Model.NguoiDung != null)
+                    {
+                        <p><strong>Tên khách hàng:</strong> @Model.NguoiDung.HoTen</p>
+                        <p><strong>Số điện thoại:</strong> @(Model.NguoiDung.SoDienThoai ?? "-")</p>
+                        <p><strong>Địa chỉ:</strong> @(Model.NguoiDung.DiaChi ?? "-")</p>
+                    }
+                    else
+                    {
+                        <p class="text-muted">Không có thông tin khách hàng</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHẦN TRẠNG THÁI THANH TOÁN -->
+    <div class="card mb-4">
+        <div class="card-header bg-info text-white">
+            <strong>💳 Thông tin thanh toán</strong>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    @{
+                        string trangThai = string.IsNullOrEmpty(Model.TrangThaiThanhToan) ? "Chưa thanh toán" : Model.TrangThaiThanhToan;
+                        bool daTThanhToan = trangThai == "Đã thanh toán" || trangThai == "Paid";
+                    }
+                    <div class="form-group">
+                        <label><strong>Trạng Thái Thanh Toán:</strong></label>
+                        <p>
+                            @if (daTThanhToan)
+                            {
+                                <span class="badge badge-success" style="font-size: 14px; padding: 8px 12px;">
+                                    ✅ Đã Thanh Toán
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge badge-warning" style="font-size: 14px; padding: 8px 12px;">
+                                    ❌ Chưa Thanh Toán
+                                </span>
+                            }
+                        </p>
+                        
+                        <!-- Nút cập nhật trạng thái -->
+                        @if (!daTThanhToan)
+                        {
+                            <button type="button" class="btn btn-sm btn-success" onclick="updatePaymentStatus(@Model.MaDH, 'Đã thanh toán')">
+                                ✔️ Đánh dấu đã thanh toán
+                            </button>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn btn-sm btn-warning" onclick="updatePaymentStatus(@Model.MaDH, 'Chưa thanh toán')">
+                                ⟲ Đánh dấu chưa thanh toán
+                            </button>
+                        }
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label><strong>Ngày Thanh Toán:</strong></label>
+                        <p>
+                            @if (Model.NgayThanhToan.HasValue)
+                            {
+                                <span class="badge badge-info">@Model.NgayThanhToan.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label><strong>Phương Thức Thanh Toán:</strong></label>
+                        <p>
+                            @if (!string.IsNullOrEmpty(Model.PhuongThucThanhToan))
+                            {
+                                <span class="badge badge-primary">@Model.PhuongThucThanhToan</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label><strong>Thời Gian Chờ Thanh Toán:</strong></label>
+                        <p>
+                            @{
+                                if (Model.NgayDat.HasValue)
+                                {
+                                    TimeSpan thoiGian = DateTime.Now - Model.NgayDat.Value;
+                                    if (daTThanhToan && Model.NgayThanhToan.HasValue)
+                                    {
+                                        TimeSpan thoiGianThanhToan = Model.NgayThanhToan.Value - Model.NgayDat.Value;
+                                        <span class="badge badge-success">@thoiGianThanhToan.Days ngày @thoiGianThanhToan.Hours giờ</span>
+                                    }
+                                    else if (!daTThanhToan)
+                                    {
+                                        <span class="badge badge-warning">@thoiGian.Days ngày @thoiGian.Hours giờ chờ</span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span class="text-muted">-</span>
+                                }
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header bg-light">
+            <strong>🛒 Chi tiết sản phẩm</strong>
+        </div>
+        <div class="card-body">
+            @{
+                var chiTietList = ViewBag.ChiTiet as List<HiTechShop.Models.ChiTietDonHang>;
+                if (chiTietList == null)
+                {
+                    chiTietList = new List<HiTechShop.Models.ChiTietDonHang>();
+                }
+            }
+
+            @if (chiTietList.Count == 0)
+            {
+                <div class="alert alert-info">Không có chi tiết sản phẩm.</div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Mã SP</th>
+                                <th>Tên sản phẩm</th>
+                                <th class="text-center">Số lượng</th>
+                                <th class="text-end">Đơn giá (đ)</th>
+                                <th class="text-end">Thành tiền (đ)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                decimal tongCong = 0;
+                            }
+                            @foreach (var ct in chiTietList)
+                            {
+                                int soLuong = ct.SoLuong.HasValue ? ct.SoLuong.Value : 0;
+                                decimal donGia = ct.DonGia.HasValue ? ct.DonGia.Value : 0;
+                                decimal thanhTien = soLuong * donGia;
+                                tongCong += thanhTien;
+
+                                <tr>
+                                    <td>@ct.MaSP</td>
+                                    <td>
+                                        @if (ct.SanPham != null)
+                                        {
+                                            <span>@ct.SanPham.TenSP</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td class="text-center">@soLuong</td>
+                                    <td class="text-end">@donGia.ToString("N0")</td>
+                                    <td class="text-end fw-bold">@thanhTien.ToString("N0")</td>
+                                </tr>
+                            }
+                            <tr class="table-secondary">
+                                <td colspan="4" class="text-end fw-bold">Tổng cộng:</td>
+                                <td class="text-end fw-bold text-danger fs-5">@tongCong.ToString("N0") đ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <div class="card">
+            <div class="card-header bg-light">
+                <strong>📍 Địa chỉ giao hàng</strong>
+            </div>
+            <div class="card-body">
+                @if (!string.IsNullOrEmpty(Model.DiaChiGiaoHang))
+                {
+                    <p>@Model.DiaChiGiaoHang</p>
+                }
+                else
+                {
+                    <p class="text-muted">Không có địa chỉ giao hàng</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <a href="@Url.Action("Index")" class="btn btn-secondary">← Quay lại</a>
+        <a href="@Url.Action("Delete", new { id = Model.MaDH })" class="btn btn-danger" onclick="return confirm('Bạn chắc chắn muốn xóa đơn hàng này?')">🗑️ Xóa đơn hàng</a>
+    </div>
+}
+
+<style>
+    .badge {
+        font-weight: 600;
+    }
+    .card {
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card-header {
+        border-radius: 6px 6px 0 0;
+    }
+</style>
+
+<script>
+    function updatePaymentStatus(id, status) {
+        if (confirm('Bạn chắc chắn muốn cập nhật trạng thái?')) {
+            $.ajax({
+                url: '@Url.Action("UpdatePaymentStatus", "DonHang", new { area = "Admin" })',
+                type: 'POST',
+                data: { id: id, status: status },
+                success: function (response) {
+                    if (response.success) {
+                        alert('✅ ' + response.message);
+                        location.reload();
+                    } else {
+                        alert('❌ ' + response.message);
+                    }
+                },
+                error: function (xhr) {
+                    alert('❌ Có lỗi xảy ra!');
+                    console.log(xhr);
+                }
+            });
+        }
+    }
+</script>

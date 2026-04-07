@@ -1,0 +1,59 @@
+﻿@model HiTechShop.Models.LoaiSP
+@{
+    ViewBag.Title = "Sửa loại sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">✏️ Sửa loại sản phẩm: @Model.TenLoai</h6>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Edit", "LoaiSP", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.HiddenFor(m => m.MaLoai)
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="font-weight-bold">Tên Loại Sản Phẩm <span class="text-danger">*</span></label>
+                            @Html.TextBoxFor(m => m.TenLoai, new { @class = "form-control", placeholder = "Ví dụ: Laptop, Điện thoại..." })
+                            @Html.ValidationMessageFor(m => m.TenLoai, "", new { @class = "text-danger small" })
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="font-weight-bold">Danh Mục Cha <span class="text-danger">*</span></label>
+                            @Html.DropDownListFor(m => m.MaDM,
+                                (SelectList)ViewBag.MaDM,
+                                "-- Chọn danh mục --",
+                                new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.MaDM, "", new { @class = "text-danger small" })
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary shadow-sm">
+                        <i class="fas fa-save"></i> ✅ Lưu thay đổi
+                    </button>
+                    <a href="@Url.Action("Index")" class="btn btn-secondary shadow-sm">
+                        <i class="fas fa-times"></i> ❌ Hủy
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @* Thêm script này để kiểm tra lỗi ngay tại trình duyệt mà không cần load lại trang *@
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}

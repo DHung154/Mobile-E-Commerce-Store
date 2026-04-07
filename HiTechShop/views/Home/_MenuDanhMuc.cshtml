@@ -1,0 +1,13 @@
+﻿@model IEnumerable<HiTechShop.Models.DanhMuc>
+
+    <ul class="submenu">
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="@Url.Action("SanPhamTheoDanhMuc", "Home", new { maDM = item.MaDM })">
+                    @item.TenDM
+                </a>
+            </li>
+        }
+    </ul>
+

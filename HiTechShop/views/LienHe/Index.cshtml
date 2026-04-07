@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Liên hệ - HiTech Shop";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+<style>
+    :root {
+        --hitech-red: #d70018;
+    }
+
+    .contact-card {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .btn-hitech {
+        background-color: var(--hitech-red);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+        .btn-hitech:hover {
+            background-color: #b50014;
+            transform: translateY(-2px);
+            color: white;
+        }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        background: #fdeaea;
+        color: var(--hitech-red);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+
+    .form-control:focus {
+        border-color: var(--hitech-red);
+        box-shadow: 0 0 0 0.2rem rgba(215, 0, 24, 0.1);
+    }
+</style>
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-uppercase" style="color: var(--hitech-red);">Kết nối với HiTech Shop</h2>
+        <div class="mx-auto mb-3" style="height: 3px; width: 60px; background-color: var(--hitech-red);"></div>
+        <p class="text-muted">Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn 24/7.</p>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show mb-4" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i> @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row g-4">
+        <div class="col-lg-5">
+            <div class="card contact-card p-4 h-100">
+                <h4 class="fw-bold mb-4">Gửi tin nhắn cho chúng tôi</h4>
+                <form method="post" action="/LienHe/GuiLienHe">
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Họ và tên</label>
+                        <input name="HoTen" class="form-control" placeholder="Nguyễn Văn A" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Email</label>
+                        <input type="email" name="Email" class="form-control" placeholder="example@gmail.com" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Số điện thoại</label>
+                        <input name="SoDienThoai" class="form-control" placeholder="0912 xxx xxx" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold">Nội dung cần hỗ trợ</label>
+                        <textarea name="NoiDung" rows="4" class="form-control" placeholder="Bạn cần HiTech giúp gì..." required></textarea>
+                    </div>
+
+                    <button class="btn btn-hitech w-100 mt-2 shadow-sm">
+                        <i class="bi bi-send-fill me-2"></i>GỬI LIÊN HỆ NGAY
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="card contact-card p-0 overflow-hidden h-100">
+                <div class="p-4 bg-white border-bottom">
+                    <h4 class="fw-bold mb-4">Thông tin cửa hàng</h4>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <span class="d-block fw-bold">Địa chỉ chính</span>
+                            <small class="text-muted">140 Lê Trọng Tấn, Tân Phú, TP.HCM</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="info-icon"><i class="bi bi-telephone-inbound-fill"></i></div>
+                        <div>
+                            <span class="d-block fw-bold">Hotline hỗ trợ</span>
+                            <small class="text-muted">0912 615 570</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="info-icon"><i class="bi bi-envelope-check-fill"></i></div>
+                        <div>
+                            <span class="d-block fw-bold">Email phản hồi</span>
+                            <small class="text-muted">support@hitechshop.vn</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="map" style="width:100%; height:350px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        const position = { lat: 10.80616097351972, lng: 106.62867402049773 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: position,
+            styles: [ // Thêm phong cách bản đồ hiện đại (tùy chọn)
+                { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "off" }] }
+            ]
+        });
+
+        new google.maps.Marker({
+            position: position,
+            map: map,
+            title: "HiTech Shop - 140 Lê Trọng Tấn",
+            animation: google.maps.Animation.DROP
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXKQS8zyJpi4_z8W4auZfUugyssoLLK6Y&callback=initMap"></script>

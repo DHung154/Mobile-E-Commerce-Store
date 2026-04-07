@@ -1,0 +1,40 @@
+﻿@model HiTechShop.Models.ThuongHieu
+@{
+    ViewBag.Title = "Thêm thương hiệu mới";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">➕ Thêm thương hiệu mới</h6>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("Create", "ThuongHieu", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    <label class="font-weight-bold">Tên Thương Hiệu <span class="text-danger">*</span></label>
+                    @Html.TextBoxFor(m => m.TenTH, new { @class = "form-control", placeholder = "Nhập tên thương hiệu (Ví dụ: Apple, Samsung...)", required = "required" })
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold">Quốc Gia</label>
+                    @Html.TextBoxFor(m => m.QuocGia, new { @class = "form-control", placeholder = "Nhập quốc gia (Ví dụ: Mỹ, Nhật Bản...)" })
+                </div>
+
+                <hr />
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save"></i> LƯU
+                    </button>
+                    <a href="@Url.Action("Index")" class="btn btn-secondary">
+                        <i class="fas fa-times"></i> HỦY
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
